@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 50px;
+    height: 25px;
+    float: left;
+}
+a{
+    color:gray;
+    text-decoration: none;
+}
+.list{
+    width: 100%;
+    padding: 5px 10vw;
+    position: absolute;
+    background: rgba(56, 47, 47, 0.7);
+}
+.list ul{
+    display: flex;
+    list-style: none;
+}
+.list ul li:first-child{
+    flex: 1;
+}
+.list ul h4{
+    font-family:serif;
+    color: rgb(163, 137, 137);
+    float: left;
+    
+}
+.list ul a{
+    margin-left: 20px;
+    font-size: 12px;
+    margin:20px;
+}
+.list ul a:hover{
+    color:white;
+}
+
+.tab{
+    width:100%;
+    height:80vh;
+    padding-top: 30vh;
+    background-image:url(uni\ pic\ 3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(241, 234, 234);
+    animation: change 10s infinite ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes change{
+    0%{
+        background-image:url(uni\ pic\ 9.jpg);
+    }
+    20%{
+        background-image:url(uni\ pic\ 8.jpg);
+    }
+    40%{
+        background-image:url(uni\ pic\ 10.jpg);
+    }
+}
+.tab .bolt{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 30px;
+}
+.tab .lock{
+    position: absolute;
+    top: 120px;
+    font-size: 10px;
+    padding-left: 60px;
+    font-style: italic;
+}
+.tab .mat{
+    position: relative;
+    top: 0px;
+    left: 50px;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.tab button{
+    padding: 10px;
+    background: white;
+    border:1px solid black;
+}
+.tab button:hover{
+    background: black; 
+    color: white;
+    cursor: pointer;
+}
+
+.box{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.box>h2{
+    text-align: center;
+    color: rgb(148, 99, 8);
+    margin: 20px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box>h2::before, .box>h2::after{
+    content: "-------";
+    letter-spacing: -10px;
+    margin: 0 10px;
+}
+.box .row{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.box .column{
+    width: 52px;
+    height: 900px;  
+}
+.box img{
+    width: 150px;
+    height: auto ;
+   
+}
+.see{
+    text-align: center;
+    font-size: 20px;
+    color: black;  
+} 
+.toy{
+    position: absolute;
+    padding-left:10px; 
+    top:980px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.new{
+    border: 1px solid rgb(150, 146, 146);
+    width: 1180px;
+    margin-top: 50px;
+}
+.nad{
+    position: relative;
+    padding-left: 10px;
+    color: rgb(163, 123, 47);
+    
+}
+.nod{
+    display: flex;
+    color: rgb(168, 128, 54);
+}
+.poly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.poly div{
+    width: 150px;
+}
+.nobullets{
+    list-style-type: none;
+}
+.poly ul a:hover{
+    color: orange;
+}
+form{
+    border: 4px solid;
+    border-color: beige;
+    display: grid;
+    grid-gap: 5px;
+}
+.container{
+    padding: 10px;
+    background-color: white;
+}
+input[type=text], input[type=submit]{
+    width: 30%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #161515;
+    box-sizing: border-box;
+}
+input[type=checkbox]{
+    margin-top: 16px;
+}
+input[type=submit]{
+    background-color: rgb(0, 18, 51);
+    color: white;
+    border: 1px solid black;
+}
+input[type=submit]:hover{
+    opacity: 0.8;
+}
+.container2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.card {
+   flex:0 1 300px;
+    height:240px;
+    background-color: #fff;
+    border: 1px solid #000;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+.card__header,.card__num {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card__header {
+    width:100%;
+    height: 70%;
+    background-color: #008000;
+}
+.card__num {
+    width:100%;
+    height: 30%;
+}
+.container3{
+    padding: 50px;
+    background-color: skyblue;
+}
+input[type=text], input[type=password], textarea{
+    width: 30%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #161515;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus{
+    background-color: red;
+    outline: none;
+}
+hr{
+    border: 1px solid #f1f1f1
+}
+.registerbtn{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerbtn:hover{
+    opacity: 1;
+}

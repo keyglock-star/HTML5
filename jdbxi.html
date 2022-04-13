@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+        }
+        .card {
+           flex:0 1 300px;
+            height:240px;
+            background-color: #fff;
+            border: 1px solid #000;
+            /* display: flex;
+            flex-direction: column; */
+
+        }
+        .card__header,.card__num {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .card__header {
+            width:100%;
+            height: 70%;
+            background-color: #008000;
+        }
+        .card__num {
+            width:100%;
+            height: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card__header">
+                <span>Civil Engineering</span>
+            </div>
+            <div class="card__num">
+                <span>₦850,000</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <span>Mechanical Engineering</span>
+            </div>
+            <div class="card__num">
+                <span>₦850,000</span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__header">
+                <span>Software Engineering</span>
+            </div>
+            <div class="card__num">
+                <span>₦850,000</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
